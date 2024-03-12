@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre em contato</title>
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+</head>
+<body>
+    <section>
+        <fieldset id="formulario">
+            <form action="x" method="get" enctype=”multipart/form-data”>
+                <legend>Entre em contato:</legend>
+                
+                <div class="itens-formulario">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" required><br>    
+                </div>
+                
+                <div class="itens-formulario">
+                    <label for="celular">Celular:</label>
+                    <input type="number" id="celular" required><br>
+                </div>
+
+                <div class="itens-formulario">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" required><br>
+                </div>  
+
+                <div class="itens-formulario">
+                    <label for="motivo_contato">Motivo do Contato:</label><br>
+                    <select name="motivo_contato" id="motivo_contato">
+                        <option value="" disabled selected>Selecione um motivo</option>
+                        <option value="Feedback">Feedback</option>
+                        <option value="Dúvida">Dúvida</option>
+                        <option value="Sugestão">Trabalho</option>
+                        <option value="Outro">Outro</option>
+                    </select><br>
+                </div>
+
+                <div class="itens-formulario">
+                    <label for="comentarios">Comentários Gerais:</label><br>
+                    <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br>
+                </div>
+
+                <div class="itens-formulario enviar">
+                    <button id="home" onclick="window.location.href='index.html'">Voltar</button>
+                    <input type="submit" value="Enviar" id="enviar">
+                </div>
+            </form>
+        </fieldset>
+    </section>
+</body>
+</html>
